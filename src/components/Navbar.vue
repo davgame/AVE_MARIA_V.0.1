@@ -4,7 +4,7 @@
 
 <nav class="bg-white dark:bg-[#141414] py-2.5 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com" class="flex items-center">
+    <a href="" class="flex items-center">
         <img src="../assets/LОGO.png" class="mr-3 h-6 sm:h-7 sm:mr-6 dark:hidden" alt="AVE MARIA Logo" />
         <img src="../assets/LogoDark.png" class="mr-3 h-6 sm:h-7 sm:mr-6 hidden dark:block" alt="AVE MARIA Logo ">    
     </a>
