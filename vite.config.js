@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base:"/AVE_MARIA_V.0.1",
   plugins: [vue()],
   resolve:{
     alias:{
