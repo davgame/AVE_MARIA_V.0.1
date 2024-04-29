@@ -7,7 +7,7 @@ $name = $_POST['name'];
 $surname=$_POST['surname'];
 $category=$_POST['category'];
 $email = $_POST['email'];
-$phone = $_POST['phone'];
+$phone_input = $_POST['phone_input'];
 $token = "6848194800:AAE0HEbU3DWCL9fvBbr5TdlP-mQWNzqctCQ";
 $chat_id = "-4140320163";
 $arr = array(
@@ -15,7 +15,7 @@ $arr = array(
   'Фамилия:'=>$surname,
   'Категория обучения:'=>$category,
   'Email' => $email,
-  'Номер телефона:' => $phone
+  'Номер телефона:' => $phone_input
 );
 
 foreach($arr as $key => $value) {
