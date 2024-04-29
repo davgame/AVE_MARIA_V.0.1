@@ -5,7 +5,7 @@
 
 $name = $_POST['name'];
 $surname=$_POST['surname'];
-$category=$_PST['category'];
+$category=$_POST['category'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 $token = "6848194800:AAE0HEbU3DWCL9fvBbr5TdlP-mQWNzqctCQ";
@@ -15,7 +15,7 @@ $arr = array(
   'Фамилия:'=>$surname,
   'Категория обучения:'=>$category,
   'Email' => $email,
-  'Телефон:' => $phone
+  'Номер телефона:' => $phone
 );
 
 foreach($arr as $key => $value) {
