@@ -5,11 +5,9 @@
 <Form/>
 <Popup/>
 <City/>
-<Telegram/>
 </template>
 
 <script setup>
-import Telegram from '../components/category/Telegram.php';
 import City from '../components/City.vue';
 import Navbar from '../components/Navbar.vue';
 import Card from '../components/category/Card.vue';
