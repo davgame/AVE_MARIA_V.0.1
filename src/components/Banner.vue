@@ -1,6 +1,6 @@
 <template>
     
-    <div id="marketing-banner" tabindex="-1" class="fixed inset-x-0 top-4 pb-2 sm:pb-5 z-50">
+    <div id="marketing-banner" tabindex="-1" class="fixed inset-x-0 bottom-0 pb-2 sm:pb-5 z-50">
     <div class="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
         <div class="rounded-lg bg-[#FF630C] p-2 shadow-lg sm:p-3">
             <div class="flex flex-wrap items-center justify-between">
