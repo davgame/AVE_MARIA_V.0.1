@@ -8,7 +8,7 @@ async function formSend(event){
     event.preventDefault();
 
     const TOKEN='6848194800:AAE0HEbU3DWCL9fvBbr5TdlP-mQWNzqctCQ';
-    const CHAT_ID='-41403';
+    const CHAT_ID='-1002089351221';
     const URI_API='https://api.telegram.org/bot${TOKEN}/sendMessage';
 
     let message=`
