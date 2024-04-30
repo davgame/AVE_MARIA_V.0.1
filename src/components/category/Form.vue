@@ -19,7 +19,7 @@
             </div>
             <!-- Modal body -->
             <div class="p-4 md:p-5">
-                <form class=" form-data space-y-4" action="">
+                <form class=" form-data space-y-4" action="Telegram.php" method="post">
                     <div>
                         <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-left">Имя</label>
                         <input type="name" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#141414] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Александр" required />
@@ -73,37 +73,3 @@
     </div>
 </div> 
 </template>
-
-<script>
-
-export default {
-    name:'Form',
-
-
-    data(){
-        return{
-            name:"",
-            surname:"",
-            category:"",
-            email:"",
-            phone_input:"",
-
-            //Telegram BOT CONFIG
-            token:"6848194800:AAE0HEbU3DWCL9fvBbr5TdlP-mQWNzqctCQ",
-            chatid:"-4140320163"
-        }
-    },
-
-    methods:{
-        submit(){
-            const fullMessage='Имя:${this.name}\nФамилия:${this.surname}\nКатегории:${this.category}\nEmail:${this.email}\nPhone_number:${this.phone_input}'
-            this.$http.post('https://api.telegram.org/bot{$this.token}/sendMessage?chat_id=${this.chat_id}&text=${fullMessage}')
-            .then(response=>{
-                console.log("Succesfully", response)
-            }, error=>{
-                console.log(error)
-            })
-        }
-    }
-}
-</script>
