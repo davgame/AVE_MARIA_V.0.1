@@ -19,14 +19,14 @@
             </div>
             <!-- Modal body -->
             <div class="p-4 md:p-5">
-                <form class="telegram-form space-y-4" action="#" method="post">
+                <form class="space-y-4" action="#" @submit.prevent="submit">
                     <div>
                         <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-left">Имя</label>
-                        <input type="name" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#141414] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Александр" required />
+                        <input type="name" v-model="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#141414] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Александр" required />
                     </div>
                     <div>
                         <label for="surname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-left">Фамилия</label>
-                        <input type="surname" name="surname" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#141414] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Мачурин" required />
+                        <input type="surname" v-model="surname" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#141414] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Мачурин" required />
                     </div>
                     <div>
                         <label for="category" name="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-left">Категория обучения</label>
@@ -38,7 +38,7 @@
                     </div>
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-left">Email</label>
-                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#141414] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required />
+                        <input type="email" v-model="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#141414] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required />
                     </div>
                     <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-left">Номер телефона</label>
                         <div class="flex items-center">
@@ -62,7 +62,7 @@
                 
                             <label for="phone_input" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Phone number:</label>
                             <div class="relative w-full">
-                                <input type="text" id="phone_input" aria-describedby="helper-text-explanation" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-0 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#141414] dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required />
+                                <input type="text" id="phone_input" v-model="phone_input" aria-describedby="helper-text-explanation" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-0 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#141414] dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required />
                             </div>
                         </div>
                     <button data-modal-target="popup-modal" data-modal-toggle="popup-modal" data-modal-hide="authentication-modal" type="submit" class="w-full text-white bg-[#4286F7] hover:bg-[#4286F7] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Отправить</button>
@@ -72,6 +72,38 @@
         </div>
     </div>
 </div> 
-
-
 </template>
+
+<script>
+
+export default {
+    name:'Form',
+
+
+    data(){
+        return{
+            name:"",
+            surname:"",
+            category:"",
+            email:"",
+            phone_input:"",
+
+            //Telegram BOT CONFIG
+            token:"6848194800:AAE0HEbU3DWCL9fvBbr5TdlP-mQWNzqctCQ",
+            chatid:"-4140320163"
+        }
+    },
+
+    methods:{
+        submit(){
+            const fullMessage='Имя:${this.name}\nФамилия:${this.surname}\nКатегории:${this.category}\nEmail:${this.email}\nPhone_number:${this.phone_input}'
+            this.$http.post('https://api.telegram.org/bot{$this.token}/sendMessage?chat_id=${this.chat_id}&text=${fullMessage}')
+            .then(response=>{
+                console.log("Succesfully", response)
+            }, error=>{
+                console.log(error)
+            })
+        }
+    }
+}
+</script>
