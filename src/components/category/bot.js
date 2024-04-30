@@ -15,7 +15,6 @@ $('.telegram-form').on('submit', function (event) {
     data.append( 'name', 		$('[name="name"]', form).val() );
     data.append( 'surname', 	$('[name="surname"]', form).val() );
     data.append( 'category', 	$('[name="category"]', form).val() );
-    data.append( 'phone', 		$('[name="phone"]', form).val() );
     data.append( 'email', 		$('[name="email"]', form).val() );
     data.append( 'phone_input', $('[name="phone_input"]', form).val() );
 
