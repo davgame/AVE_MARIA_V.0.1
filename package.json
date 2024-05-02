@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.9.0",
+    "axios": "^1.6.8",
     "boxicons": "^2.1.4",
     "flowbite": "^2.3.0",
     "flowbite-vue": "^0.1.2",
