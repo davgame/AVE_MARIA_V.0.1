@@ -20,7 +20,7 @@
         
         <button data-modal-target="select-modal" data-modal-toggle="select-modal" type="button" class="block text-white bg-[#000000] hover:bg-[#4286F7] hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-[#4286F7] dark:text-white dark:hover:bg-white dark:hover:text-[#4286F7] focus:outline-none dark:focus:ring-white">Краснодар</button>
         
-        <button @click="burgerIsOpened = !burgerIsOpened" data-collapse-toggle="mobile-menu-2" type="button" class="md:hidden flex items-center w-9 h-9 justify-center text-xs font-medium text-gray-700 bg-white border border-gray-200 rounded-lg toggle-dark-state-example hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+        <button @click="burgerIsOpened = !burgerIsOpened" data-collapse-toggle="mobile-menu-2" type="button" class="w-9 h-9 md:hidden flex items-center justify-center text-xs font-medium text-gray-700 bg-white border border-gray-200 rounded-lg toggle-dark-state-example hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
             <span class="sr-only">Open main menu</span>
             <box-icon @onclick="onToggleMenu(select-modal)" :name="burgerIsOpened ? 'x' : 'menu'" class="cursor-pointer md:hidden fill-[#374151] dark:fill-[#9CA3AF]"></box-icon>
         </button>
