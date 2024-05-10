@@ -33,6 +33,7 @@ module.exports = {
     },
     fontFamily: {
       'body': [
+    'Rubik',
     'Inter', 
     'ui-sans-serif', 
     'system-ui', 
