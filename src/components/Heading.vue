@@ -2,7 +2,7 @@
     <div class="flex flex-col sm:flex-col lg:mt-20 mt-14">
         <div class="flex lg:flex-row flex-col lg:gap-x-80 ">
             <div class="order-1 sm:order-1">
-                <p class="text-left mt-14 mb-4 md:text-7xl text-5xl font-bold leading-none tracking-tight text-gray-900  lg:text-8xl dark:text-white">AVE <span class="text-[#4286F7] dark:text-[#4286F7] md:text-7xl lg:text-8xl">MARIA</span></p>
+                <p class="text-left mt-14 mb-4 md:text-7xl text-5xl font-bold leading-none tracking-tight text-gray-900  lg:text-8xl dark:text-white font-Rubik">AVE <span class="text-[#4286F7] dark:text-[#4286F7] md:text-7xl lg:text-8xl">MARIA</span></p>
                 <img src="../images/AutoSchool.png" class=" mt-7 mb-14 lg:block hidden" alt="dfdf" srcset="">
                 <img src="../images/AutoSchool_mini.png" class="sm: mt-7 mb-12 lg:hidden sm:block" alt="dfdf" srcset="">
             </div>

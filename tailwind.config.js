@@ -32,6 +32,7 @@ module.exports = {
       }
     },
     fontFamily: {
+      'Rubik':['Rubik', 'bold'],
       'body': [
     'Rubik',
     'Inter', 
