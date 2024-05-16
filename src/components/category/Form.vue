@@ -72,7 +72,7 @@ export default{
 
             //Telegram BOT CONFIG
             token:"6848194800:AAE0HEbU3DWCL9fvBbr5TdlP-mQWNzqctCQ",
-            chatId:-4140320163
+            chatId:-1002113216362
   
         }
     },
