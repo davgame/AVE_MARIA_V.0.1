@@ -4,10 +4,10 @@
 
 <nav class="bg-white dark:bg-[#141414] py-2.5 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="" class="flex items-center">
+    <router-link :to="{name:'home'}" class="flex items-center">
         <img src="../assets/LОGO.png" class="mr-3 h-6 sm:h-7 sm:mr-6 dark:hidden" alt="AVE MARIA Logo" />
         <img src="../assets/LogoDark.png" class="mr-3 h-6 sm:h-7 sm:mr-6 hidden dark:block" alt="AVE MARIA Logo ">    
-    </a>
+    </router-link>
     <div class="flex gap-2 items-center lg:order-3 sm:justify-between">
         <button @click="toggleDark()" type="button" data-toggle-dark="light" class="flex items-center w-9 h-9 justify-center text-xs font-medium text-gray-700 bg-white border border-gray-200 rounded-lg toggle-dark-state-example hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
             <svg data-toggle-icon="moon" class="dark:hidden w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
@@ -29,8 +29,8 @@
           <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               <li v-for="(item, idx) in listItemMenu" :key="idx">
                   <router-link :to="{name: item.name}" 
-                  class="router-link-active block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" 
-                  :class=" router.name == item.name ? ['block', 'py-2', 'pr-4', 'pl-3', 'text-white', 'rounded', 'bg-primary-700', 'lg:bg-transparent', 'lg:text-primary-700', 'lg:p-0 dark:text-white']:''" aria-current="page">{{item.text}}</router-link>
+                  class="router-link-active block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#4286F7] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" 
+                  :class=" router.name == item.name ? ['block', 'py-2', 'pr-4', 'pl-3', 'text-white', 'rounded', 'bg-[#4286F7]', 'lg:bg-transparent', 'lg:text-[#4286F7]', 'lg:p-0 dark:text-white']:''" aria-current="page">{{item.text}}</router-link>
               </li>
           </ul>
       </div>

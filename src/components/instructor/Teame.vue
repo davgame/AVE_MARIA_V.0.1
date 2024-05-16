@@ -6,7 +6,7 @@
           <div class="text-center text-gray-500 dark:text-gray-400">
               <img class="mx-auto mb-4 w-38 h-38 rounded-full" src="/src/images/Ellipse6.png" alt="Bonnie Avatar">
               <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="#">Антонов Михаил</a>
+                  <a>Антонов Михаил</a>
               </h3>
               <p class="text-[#4286F7] font-medium">Инструктор</p>
 
@@ -14,7 +14,7 @@
           <div class="text-center text-gray-500 dark:text-gray-400">
               <img class="mx-auto mb-4 w-38 h-38 rounded-full" src="/src/images/Ellipse7.png" alt="Helene Avatar">
               <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="#">Костенко Антон</a>
+                  <a>Костенко Антон</a>
               </h3>
               <p class="text-[#4286F7] font-medium">Инструктор</p>
               
@@ -22,14 +22,14 @@
           <div class="text-center text-gray-500 dark:text-gray-400">
               <img class="mx-auto mb-4 w-38 h-38 rounded-full" src="/src/images/Ellipse8.png" alt="Jese Avatar">
               <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="#">Ладыгин Алексей</a>
+                  <a>Ладыгин Алексей</a>
               </h3>
               <p class="text-[#4286F7] font-medium">Инструктор</p>
           </div>
           <div class="text-center text-gray-500 dark:text-gray-400">
               <img class="mx-auto mb-4 w-42 h-42 rounded-full" src="/src/images/Ellipse9.png" alt="Jese Avatar">
               <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="#">Антонов Михаил</a>
+                  <a>Антонов Михаил</a>
               </h3>
               <p class="text-[#4286F7] font-medium">Инструктор</p>
           </div>

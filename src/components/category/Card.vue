@@ -6,7 +6,7 @@
 
   <!--   ✅ Product card 1 - Starts Here 👇 -->
   <div class="w-72 bg-white dark:bg-[#070707] shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-    <a href="#">
+    <a>
       <img src="/src/assets/imgB.png" />
       <div class="px-4 py-3 w-72">
         <span class="text-gray-400 mr-3 uppercase text-xs">AVE MARIA</span>
@@ -29,7 +29,7 @@
 
   <!--   ✅ Product card 2 - Starts Here 👇 -->
   <div class="w-72 bg-white dark:bg-[#060606] shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-    <a href="#">
+    <a>
       <img src="/src/assets/imgA.png" />
       <div class="px-4 py-3 w-72">
         <span class="text-gray-400 mr-3 uppercase text-xs">AVE MARIA</span>
@@ -50,7 +50,7 @@
 
   <!--   ✅ Product card 3 - Starts Here 👇 -->
   <div class="w-72 bg-white dark:bg-[#060606] shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-    <a href="#">
+    <a>
       <img src="/src/assets/imgD.png"/>
       <div class="px-4 py-3 w-72">
         <span class="text-gray-400 mr-3 uppercase text-xs">AVE MARIA</span>
